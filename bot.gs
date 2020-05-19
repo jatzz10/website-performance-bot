@@ -108,5 +108,6 @@ function postDataToSlack() {
 }
 
 function doGet() {
+  postDataToSlack()
   return ContentService.createTextOutput('Website Performance retrieval successfull!');
 }
